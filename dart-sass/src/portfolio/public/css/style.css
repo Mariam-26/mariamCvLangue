@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* fin reset Meyer */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+body::before {
+  content: "";
+  position: fixed;
+  background: black;
+  left: 0;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  color: #18d26e;
+}
+a:hover {
+  color: #35e888;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+/* style pr le header */
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#header h1 a {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+#header h1 a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+#header h2 {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+#header h2 span {
+  font-family: "Open Sans", sans-serif;
+  color: #04b8ff;
+  border-bottom: 2px solid #18d26e;
+  padding-bottom: 6px;
+}
+#header h2 span:hover {
+  color: #fff;
+  border-bottom: 2px solid #ff28f4;
+  padding-bottom: 6px;
+}
+#header .social-links {
+  margin-top: 40px;
+  display: flex;
+}
+#header .social-links a {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+#header .social-links a:hover {
+  background: #18d26e;
+}
+#header .nav-menu {
+  margin-top: -400px;
+  margin-left: 57%;
+  margin-right: 70px;
+}
+#header .nav-menu ul {
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+#header .nav-menu ul li {
+  margin-left: 30px;
+}
+#header .nav-menu a {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#header .nav-menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+#header .nav-menu a:hover::before,
+#header .nav-menu li:hover > a::before,
+#header .nav-menu .active > a::before {
+  visibility: visible;
+  width: 25px;
+}
+#header .nav-menu a:hover,
+#header .nav-menu .active > a,
+#header .nav-menu li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* fin header */
+/* début du style pour le main */
+/* fin main */
+/* style pr le footer */
+/* fin footer */
+@media screen and (min-width: 1020px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 990px) {
+  #header h1 {
+    background-attachment: fixed;
+  }
+  #header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #header .social-links {
+    margin-top: 15px;
+  }
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
